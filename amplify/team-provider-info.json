@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-groupmomania-dev-171256-authRole",
+      "UnauthRoleArn": "arn:aws:iam::439167641403:role/amplify-groupmomania-dev-171256-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::439167641403:role/amplify-groupmomania-dev-171256-authRole",
+      "Region": "eu-west-3",
+      "DeploymentBucketName": "amplify-groupmomania-dev-171256-deployment",
+      "UnauthRoleName": "amplify-groupmomania-dev-171256-unauthRole",
+      "StackName": "amplify-groupmomania-dev-171256",
+      "StackId": "arn:aws:cloudformation:eu-west-3:439167641403:stack/amplify-groupmomania-dev-171256/34070570-bb3c-11ec-9944-0a3fb3d0708e",
+      "AmplifyAppId": "dljbnramiipmu"
+    },
+    "categories": {
+      "function": {
+        "groupmomaniab60a7b6c": {
+          "deploymentBucketName": "amplify-groupmomania-dev-171256-deployment",
+          "s3Key": "amplify-builds/groupmomaniab60a7b6c-4f5347736b6a4e517745-build.zip"
+        }
+      }
+    }
+  }
+}

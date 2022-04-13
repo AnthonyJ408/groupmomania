@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/groupomania": {
+      "name": "/groupomania",
+      "lambdaFunction": "groupmomaniab60a7b6c",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

@@ -1,19 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <p>{{ msg }}</p>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import { API } from "aws-amplify";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+  },
+  data(){
+    return {
+      msg=''
+    }
+  },
+  computed: {
+    async fetchgroupomania() {
+      API.get("myAPI", "/groupomania", {})
+        .then((response) => {
+          this.msg = response;
+          console.log(`Response: ${response}`);
+        })
+        .catch((error) => {
+          console.log(error.response);
+        });
+      this.name = "";
+      this.description = "";
+    },
+  },
+};
 </script>
 
 <style>
